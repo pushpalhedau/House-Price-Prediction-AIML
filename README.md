@@ -11,7 +11,7 @@ This project is a Flask-based web application that predicts house prices based o
 
 ✔️ Square footage
 
-✔️ Location
+✔️ Location and many other...
 
 ## 📂 Project Structure
 
@@ -32,7 +32,7 @@ This project is a Flask-based web application that predicts house prices based o
 ├── static
 │   ├── styles.css           # CSS file for frontend styling
 │
-├── screenshots              # Folder for project screenshots (to be added)
+├── screenshots              # Folder for project screenshots
 │   ├── form_submission.png  
 │   ├── prediction_output.png
 ```
@@ -61,7 +61,7 @@ This project is a Flask-based web application that predicts house prices based o
 ## 🛠️ Setup & Installation
 1️⃣ Clone the repository
 ```sh
-git clone <repository-url>
+git clone https://github.com/pushpalhedau/House-Price-Prediction-AIML.git
 cd House-Price-Prediction
 ```
 2️⃣ Install dependencies
@@ -75,7 +75,7 @@ python train_model.py
 
 ✅ This will generate house_price_model.pkl and label_encoder.pkl.
 
-4️⃣ Run the Flask Application
+4️⃣ Run the Flask Application (make sure pkl files paths are correct)
 ```sh
 python app.py
 ```
@@ -83,7 +83,7 @@ python app.py
 Go to http://127.0.0.1:5000/ in your browser.
 
 ## 🖥️ Usage
-1. Enter the house details (bedrooms, bathrooms, size, location) in the form.
+1. Enter the house details (bedrooms, bathrooms, size, location and etc) in the form.
 
 2. Click "Predict" to get the estimated house price.
 
@@ -93,10 +93,21 @@ Go to http://127.0.0.1:5000/ in your browser.
 
 📌 Form Submission
 
+![App Screenshot](https://github.com/pushpalhedau/House-Price-Prediction-AIML/blob/main/House-Price-Prediction/screenshots/form_submission.png?raw=true)
+
+
 📌 Prediction Output
 
-💡 Make sure to add screenshots inside the screenshots/ folder before pushing to GitHub!
-##
+![App Screenshot](https://github.com/pushpalhedau/House-Price-Prediction-AIML/blob/main/House-Price-Prediction/screenshots/prediction_output.png?raw=true)
+
+
 ✨ Star ⭐ this repository if you found it useful!
 
 📩 Feel free to contribute or report issues!
+
+## 👨‍💻 Author
+Pushpal Hedau
+
+📧 Email: pushpalhedau107@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/pushpal-hedau-04479124a/
