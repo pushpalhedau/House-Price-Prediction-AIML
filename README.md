@@ -74,7 +74,7 @@ cd House-Price-Prediction
 ```sh
 pip install -r requirements.txt
 ```
-3️⃣ Train the Machine Learning Model
+3️⃣ Train the Machine Learning Model (optional, you can also directly download from this repository)
 ```sh
 python train_model.py
 ```
