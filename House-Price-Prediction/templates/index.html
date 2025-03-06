@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>House Price Prediction</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="scroll-container">
+            <div class="form">
+                <form method="POST" action="{{ url_for('test')}}">
+                    <div class="title">HOUSE PRICE PREDICTION</div>
+
+                    <span class="detail">Total Bedroom</span>
+                    <input name="bed" type="text" class="input" placeholder="Eg: 3">
+
+                    <span class="detail">Total Bathroom</span>
+                    <input name="bath" type="text" class="input" placeholder="Eg: 2">
+
+                    <span class="detail">Total Kitchen</span>
+                    <input name="kitchen" type="text" class="input" placeholder="Eg: 1">
+
+                    <span class="detail">Total Rooms</span>
+                    <input name="troom" type="text" class="input" placeholder="Eg: 5">
+
+                    <span class="detail">Total Area (sqft)</span>
+                    <input name="tarea" type="text" class="input" placeholder="Eg: 1500">
+
+                    <span class="detail">Total Garage Area (sqft)</span>
+                    <input name="garea" type="text" class="input" placeholder="Eg: 250">
+
+                    <span class="detail">Neighborhood (Choose from options)</span>
+                    <input name="neighbor" list="suggestions" type="text" class="input" placeholder="Eg: OldTown">
+                    
+                    <datalist id="suggestions">
+                        {% for item in places %}
+                            <option value="{{ item }}">
+                        {% endfor %}
+                    </datalist>
+
+                    <h2 class="output">{{ prediction }}</h2>
+
+                    <button class="button-confirm" onclick="predictval()" type="submit">PREDICT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
