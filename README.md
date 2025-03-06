@@ -34,7 +34,7 @@ This project is a Flask-based web application that predicts house prices based o
 │
 ├── screenshots              # Folder for project screenshots
 │   ├── form_submission.png  
-│   ├── prediction_output.png
+│   ├── predicted_output.png
 ```
 ## 🚀 How the Project Works
 1️⃣ Model Training (train_model.py)
@@ -98,7 +98,7 @@ Go to http://127.0.0.1:5000/ in your browser.
 
 📌 Prediction Output
 
-![App Screenshot](https://github.com/pushpalhedau/House-Price-Prediction-AIML/blob/main/House-Price-Prediction/screenshots/prediction_output.png?raw=true)
+![App Screenshot](https://github.com/pushpalhedau/House-Price-Prediction-AIML/blob/main/House-Price-Prediction/screenshots/predicted_output.png?raw=true)
 
 
 ✨ Star ⭐ this repository if you found it useful!
