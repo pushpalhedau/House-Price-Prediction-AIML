@@ -24,3 +24,4 @@ joblib.dump(model, "house_price_model.pkl")
 joblib.dump(le, "label_encoder.pkl")
 
 print("Model and label encoder saved successfully!")
+
